@@ -1,0 +1,5 @@
+Reduce in JS
+1.Su dung khi ma muon nhan lai 1 phan tu duy nhat sau khi duoc tinh toan
+va xu ly cac phan tu cua 1 array
+syntax:
+    Reduce(funct,initial_value);

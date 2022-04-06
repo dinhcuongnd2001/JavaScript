@@ -1,0 +1,29 @@
+Sử dụng JavaScript với HTML (2 cách)
+    C1: Internal (Sử dụng nội bộ): dùng bên trong file HTML qua cặp thẻ <script> </script>
+    C2: External (Sử dụng file .js bên ngoài): Viết code js bên ngoài và lưu trong file .js. Phải thêm vào phần <body> của file HTML
+        và trong file .js không được chứa thẻ <script></script>
+
+Đặt tên biến:
+Đặt tên biến hợp lệ theo quy tắc của Javascript là việc đơn giản, tuy nhiên trong thực tế đặt tên biến không chỉ 
+dừng lại ở việc đặt cho hợp lệ mà ta còn phải quan tâm tới các yếu tố khác như:
+    1.Tên biến phải có ý nghĩa cụ thể, phải rõ ràng và thể hiện được nó đang lưu trữ cái gì.
+    2.Sử dụng tiếng Anh để đặt tên biến, sử dụng các từ có thể đọc lên được như userName, phoneNumber, verifyEmail, …
+    3.Tránh đặt tên biến ngắn như a, b, p trừ khi bạn chỉ đang làm ví dụ hoặc 
+    bạn thật sự hiểu trường hợp đó có thể đặt tên như vậy.
+    4.Tránh đặt tên biến chung chung kiểu như data, value. Vì khi nhìn vào không thể hiểu data là data của cái gì,
+    value là value của cái gì. Chỉ sử dụng tên dạng này khi đang trong ngữ cảnh cụ thể giúp bổ nghĩa cho những từ chung chung đó.
+
+COMMENT trong js:
+    Comment 1 dong: Chúng ta sẽ sử dụng 2 dấu gạch chéo // trước comment. Cú pháp như sau: // content
+    Comment nhiều dòng - một khối : /* Content */
+
+    Sử dụng comment như nào:
+        Mục đích chú thích code
+        Mục đích Vô hiệu hóa đoạn code
+Một số hàm built-in:
+    1. Alert (in ra thông báo)
+    2. Console (hiện thi message trong console)
+    3. Confirm (Hiện lên 1 form dùng để xác nhận)
+    4. Prompt  (Hiện lên 1 form input để xác nhận)
+    5. Set timeout (Dùng để làm 1 function sau một khoảng thờI gian)
+    6. Set interval (Dùng để làm 1 function sau 1 khoảng thời gian lặp lại liên tục)

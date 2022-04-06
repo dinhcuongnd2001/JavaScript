@@ -1,0 +1,10 @@
+Array method:
+    1. foreach(): dung duyet qua tung phan tu cua mang
+    2. every(): kiem tra tat ca cac phan tu cua mang co thoa man dk nao 
+       day ko (return true or false)
+    3. some(): kiem tra xem trong mang co 1 pt nao do thoa man dieu kien 
+       hay ko
+    4.find(): Lap mang de kiem tra xem co phan tu nao thoa man dieu kien 
+      khong, neu co tra ve phan tu dau tien thoa man, neu khong tra ve 
+      undefined
+    5. filter(): giong find nhung tra ve danh sach cac phan tu thoa man

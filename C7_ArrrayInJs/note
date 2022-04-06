@@ -1,0 +1,9 @@
+1. ToString: return a String with the comma(,)
+2. Join: Join element of the array to the string
+3. Pop: Remove the element of the end of array, return it
+4. Push: add a element at the end of the array.
+5. Shift: remove the element of the head of array and return it
+6. Unshift: add a element of the head of array
+7. Splice(index, count, elements): delete the element from at the index and delete count number elements and add elements.
+8. concat() : concat 2 array.
+9. Slice(indexStart, indexEnd); cut the elements from the indexStart to indexEnd

@@ -1,0 +1,25 @@
+// Object trong JS
+
+1) Khai bao: begin with the key word "var":
+    ex: var myInfo = {
+        key1: value1,
+        key2: value2
+    };
+    note: khi ma muon dat key ma bi vi pham nguyen tac dat ten thi hay cho key vao trong cap nhay ""
+2) them mot cap key-value vao trong mot object:
+    c1: Name_objec.key = value;
+    c2: Name_objec['key'] = value;
+    C3: them vao qua mot bien:
+        var key = 'email'
+        [key] = value;
+3) Cach lay value trong mot object:
+    C1: Name-object.key
+    C2: Name-object['key']
+    C3: var x = key;
+        Name-object[x]
+4) Xoa mot key-value trong
+    delete Name-object.key;
+
+5) Note: Trong cac truong hop khi ma key la cac gia tri co ban (khong phai ham thi goi la Thuoc Tinh (Property))
+         Con trong cac truong hop la ham thi goi la Phuong Thuc (Method)
+6)Note: Co the them vao thuoc tinh qua prototype

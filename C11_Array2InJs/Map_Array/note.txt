@@ -1,0 +1,6 @@
+Map in JS
+    1. Phuong thuc Map() tra mot mang moi(New array) co so luong phan tu 
+    bang so luong phan tu cua mang ban dau;
+    2. Doi so truyuen vao trong map() la mot function()
+    3.Ung Dung: Dung de hien thi cac view tren layout
+                Dung de trich xuat, thay doi thong tin tu 1 mang
