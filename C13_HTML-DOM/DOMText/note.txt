@@ -1,0 +1,10 @@
+1.InnerText
+    dung de lay noi dung textNode cua element (chi lay cac ky tu xuat hien
+    trong element)
+    khi them vao thi van them tat ca cac ky tu da co (ke ca xuong dong)
+2.TextContent
+    dung de lay noi dung textNode cua element (Nhung lay nguyen ban noi 
+    dung textNode cua element, ke ca khoang trang, xuong dong, cac thuoc
+    tinh css cung duoc hien thi)
+    khi them vao thi van them vao nhung gi minh nhin thay thoi (khong co
+    xuong dong, khoang canh)

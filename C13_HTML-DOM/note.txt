@@ -1,0 +1,27 @@
+JavaScript HTML DOM
+với HTML DOM, JS có thể truy cập và thay đổi tất cả các phần tử (element) 
+của HTML document
+The HTML DOM (Document Object Model) 
+Khi một trang web được load lại, trình duyệt sẽ tạo ra một DOM của trang đó
+Mô hình của HTML DOM được xây dựng như là 1 cái cây của Objects
+với mô hình này, JS có thể tạo ra được các HTML động
+    1. JS có thể thay đổi được tất cả các element trong trang
+    2. JS có thể thay dổi được tất cả các thuộc tính (attribute) trong trang
+    3. JS có thể thay đổi được tất cả các CSS style trong trang
+    4. JS có thể xoá các thành phần (element) và các thuộc tính (attribute) 
+    5. JS có thể thêm các thành phần (element) và các thuộc tính (attribute)
+    6. JS có thể phản ứng các thành phần (element) và các thuộc tính (attribute) 
+    7. JS có thể tạo ra các sự kiện HTML (HTML event) trong trang
+DOM là gì?
+    DOM là 1 một chuẩn W3C (Work Wide Web Consortium)
+    chuẩn W3C DOM chia thành 3 phần khác nhau:
+        Core DOM: mô hình chuẩn cho tất cả các loại tài liệu
+        XML DOM: mô hình chuẩn cho tài liệu XML
+        HTML DOM: mô hình chuẩn cho tài liệu HTML 
+HTML DOM là gì?
+    là một chuẩn mô hình đối tượng và giao diện lập trình cho HTML
+    gồm:
+        1.Element
+        2.Attribute
+        3.Text
+Document: đại diện cho cả website 

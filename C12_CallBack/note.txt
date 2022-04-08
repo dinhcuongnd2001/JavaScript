@@ -1,0 +1,4 @@
+call back:
+    1: là hàm
+    2: Truyền qua đối số
+    3: được gọi lại (qua hàm nhận đối số) 

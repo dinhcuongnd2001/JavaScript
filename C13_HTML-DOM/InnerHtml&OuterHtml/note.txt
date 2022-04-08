@@ -1,0 +1,9 @@
+InnerHTML && OuterHTML
+    day deu la 2 thuoc tinh cua element node
+1. InnerHTML:
+    co the them 1 elementNode vao trong mot elementNode
+    ghi de len cac the da co san trong element 
+    Syntax:
+        element.innerHTML = "<tag atttribute >content</tag>"
+2. OuterHTML:
+    Giong nhu InnerHTML nhung se ghi de len toan bo ke ca element

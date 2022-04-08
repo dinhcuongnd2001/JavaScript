@@ -1,0 +1,6 @@
+To do so, you have to find the elements first. There are several ways to do this:
+    1.Finding HTML elements by id (id = "")
+    2.Finding HTML elements by tag name (h1, h2 , span ....)
+    3.Finding HTML elements by class name (class = "")
+    4.Finding HTML elements by CSS selectors
+    5.Finding HTML elements by HTML object collections

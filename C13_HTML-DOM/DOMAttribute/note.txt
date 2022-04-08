@@ -1,0 +1,17 @@
+1) Tao ra attribute cho element:
+    sau khi lay duoc element roi thi ta co the set attribute cho no 
+    bang 2 cach sau:
+    C1: element.<type_attribute> = "Name_Attribute"
+        ex:
+        headingElement.id = 'header';
+        headingElement.className = 'header';
+    Note: Nhung voi cac nay thi khi ma them cac attribute ma tag duoc lay
+    ra khong co thi se khong the them duoc
+        headingElement.href = 'header'; // khong them duoc
+    C2: element.setAttribute('type_attribute', 'Name_Attribute');
+        ex:
+        headingElement.setAttribute('href', 'heading');
+2) lay ra attribute cua element:
+        element.getattribute('type_attribute);
+        ex
+        console.log(headingElement.getAttribute('class'));
