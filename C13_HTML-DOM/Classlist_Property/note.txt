@@ -1,0 +1,10 @@
+Chi truy cap duoc vao day khi da lay ra Element Node
+Doi tuong nay giup quan ly class cua chinh doi tuong duoc lau ra
+cac phuong thuc:
+    1. add : them lop vao doi tuong 
+        syntax:
+        document.classlist.add('element1', 'element2', ...);
+    2. contains: kiem tra xem 1 class co nam trong element nay hay khong
+        document.classlist
+    3. remove: xoa bo class o element
+    4. toggle: xoa/them class
