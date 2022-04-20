@@ -1,0 +1,6 @@
+DOM Event: sử dụng trong các trường hợp cơ bản
+           chỉ dùng để thêm các sự kiện mà không có nhu cầu xóa đi
+           vẫn có thể xử lý nhiều việc khi 1 event xảy ra
+Event Listener: (Linh động hơn trong việc thêm hay xóa các thao tác sự kiện)
+        sử dụng trong việc muốn xử lý nhiều việc khi 1 event xảy ra
+        dung đề lắng nghe sự kiện, hủy bỏ lắng nghe

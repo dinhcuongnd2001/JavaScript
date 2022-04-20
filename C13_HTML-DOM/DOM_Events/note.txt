@@ -1,0 +1,9 @@
+Tổng kết:
+    1) DOM events: là những sự kiện xuất phát từ phía người dùng (click chuột
+    bấm vào bàn phím, thay dối kích thước khung)
+    2) Có thể lắng nghe sự kiện bằng cách (attribute events) viết thẳng vào
+        trong thẻ 
+            note: khi lắng nghe ở thẻ cha mà thẻ bấm vào thẻ con thì thẻ cha
+            cũng sẽ (nổi bọt) bắt sự kiện
+        Cách 2 là: gán sự kiện cho element node (thường sử dụng cách này )
+

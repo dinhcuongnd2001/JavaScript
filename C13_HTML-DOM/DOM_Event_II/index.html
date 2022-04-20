@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        ul{
+            display: none;
+        }
+
+        input:focus ~ ul
+        {
+            display: block;
+        }
+
+        .container{
+            display: flex;
+        }
+        .w-50{
+            flex: 0 0 50%;
+            max-width: 50%;
+            height: 20vh; 
+            /* border: 1px solid rgba(48, 46, 77, 0.3); */
+            text-align: center;
+            line-height: 20vh;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-------- LESSON -------->
+    <h1>hello</h1>
+    <!-- 1 -->
+    <a href="https://www.youtube.com/watch?v=Qy_ADdVXv6Q&list=RDQy_ADdVXv6Q&start_radio=1&ab_channel=1967" class="connect">
+        click here to relax
+    </a>
+    <br>
+    <a href="https://www.google.com.vn" class="connect">
+        google
+    </a>
+    <!-- 2 -->
+    <br>
+    <input type="text", placeholder="Tim Kiem" style="margin-top: 25px;">
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+
+    </ul>
+
+    <div style="border: 1px solid #333;">
+        DIV
+        <br></br>
+        <button>Click Me!</button>
+    </div>
+
+    <!-- ------PRACTICE------ -->
+    <!-- <div style="border: 1px solid rgba(48, 46, 77, 0.3); margin-top: 50px;" class="container">
+        <div class="w-50">Box1</div>
+        <div class="w-50 container">
+            <div class="w-50">Box2</div>
+            <div class="w-50">Box3</div>
+        </div>
+    </div> -->
+    <script src="./main.js"></script>
+</body>
+</html>
