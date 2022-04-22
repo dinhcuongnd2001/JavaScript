@@ -1,0 +1,7 @@
+2 buoc de tao ra mot promise <main.js>
+promise la mot khai niem, sinh ra de xu ly thao tac bat dong bo, truoc khi co promise
+thi thuong su dung CallBack (va thuong xay ra su viec CallBack hell)
+de su dung promise ta khai bao voi tu khoa NEW PROMISE
+trong object PROMISE se co mot ham excutor tra ve 2 tham so (resolve, reject)
+cac thuoc tinh di voi resolve la then,
+thuoc tinh di voi reject la catch

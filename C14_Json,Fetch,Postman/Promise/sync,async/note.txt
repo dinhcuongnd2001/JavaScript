@@ -1,0 +1,4 @@
+Note:
+    sync: (Synchronous):Đông bộ, chạy theo luồng, cái nào viết trước thì đồng bộ trước
+    cái nào viết sau thì đồng bộ sau
+    async: Không đồng bộ (setTimeout, setInterval, fetch, xmlHTTPRequest)

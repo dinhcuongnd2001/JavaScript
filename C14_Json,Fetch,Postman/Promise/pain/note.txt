@@ -1,0 +1,3 @@
+Vấn đề:
+    1.Callback hell
+    2. pyramid of doom

@@ -1,0 +1,4 @@
+1.Json
+    + la mot dinh dang du lieu (chuoi)
+    + JavaScript Object Notation (JSON)
+    + JSON co the the hien dang du lieu trong JS nhu: Number, Boolean, Null, Array, Object

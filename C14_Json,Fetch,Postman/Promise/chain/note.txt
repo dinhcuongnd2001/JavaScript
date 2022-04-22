@@ -1,0 +1,4 @@
+chain la moi khoi chuoi viet lien nhau
+    vd: khi ma resolve() duoc goi thi se thuc thi cac chuoi .then()
+    trong chuoi nay, gia tri tra ve cua thang truoc se la du lieu dau vao 
+    cua thang sau
