@@ -1,0 +1,16 @@
+Arrow Function:
+    1. Neu ham chi nhan mot doi so thi ta co the
+    loai bo ngoac don ben ngoai
+        ex: (log) => {
+            ....
+        }
+        =>> log => {
+            ....
+        }
+    2. sau dau => thi co the bo {} de tra ve gia tri luon
+    neu muon tra ve mot object thi them dau ()
+        ex: sum(a,b) => a + b
+            sum(a,b) => ({a:b, b = b})
+    
+    3. khong dung arrow function cho ham khoi tao
+    4. khong su dung duoc context (this)

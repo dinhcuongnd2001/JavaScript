@@ -1,0 +1,3 @@
+1. Dinh nghia key: value cho object
+2. dinh nghia method cho object
+3. dinh nghia key cho object duoi dang bien

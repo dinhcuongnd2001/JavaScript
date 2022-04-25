@@ -1,0 +1,2 @@
+1/ khac nhau giua var/ let, const: scope, Hosting
+2/ Const / var, let: assignment
