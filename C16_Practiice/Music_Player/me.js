@@ -1,5 +1,5 @@
 const $ = document.querySelector.bind(document);
-const $$ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 const header = $('header h2')
 const cdThumb = $('.cd-thumb')
 const audio = $('#audio')
@@ -9,14 +9,16 @@ const player = $('.player')
 const progess = $('#progress')
 const nextBtn = $('.btn-next')
 const prevBtn = $('.btn-prev')
-
-// console.log(nextBtn, prevBtn)
-
+const btnRandom = $('.btn-random');
+const btnRepeat = $('.btn-repeat');
+const playlist = $('.playlist');
 
 const app = 
 { 
   currentIndex: 0,
   isPlaying: false,
+  isRandom: true,
+  isRepeat: true,
     songs: [
         {
           name: "Em không sai chúng ta sai",
@@ -74,9 +76,9 @@ const app =
     render : function()
     {
 
-        const htmls = this.songs.map( song => {
+        const htmls = this.songs.map( (song, index) => {
             return `
-                <div class="song">
+                <div class="song ${index === this.currentIndex ? 'active' : ''}" data-index = ${index}>
                     <div class="thumb"
                         style="background-image: url('${song.image}')">
                     </div>
@@ -91,7 +93,7 @@ const app =
             `;
         })
 
-        $('.playlist').innerHTML = htmls.join('');
+        playlist.innerHTML = htmls.join('');
     },
 
     /* Define new property at here */
@@ -110,7 +112,6 @@ const app =
     {   
       const _this = this;
       const cdwidth = cd.offsetWidth;
-
       // handle cd: Quay / Dung 
 
       const cdThumbAnimate = cdThumb.animate([{transform: 'rotate(360deg)'}],{
@@ -181,6 +182,22 @@ const app =
           // console.log(audio.currentTime, audio.duration)
           const progressPercent = (audio.currentTime/audio.duration) * 100
           progress.value = progressPercent;
+
+          if(audio.currentTime === audio.duration)
+          {
+            if(_this.isRandom === false){
+              _this.button_Random();
+            }
+            else if(_this.isRepeat === false)
+            {
+              _this.button_Repeat();
+            }
+            else
+            {
+              _this.nextSong();
+              audio.play();
+            }
+          }
         }
       }
 
@@ -189,6 +206,50 @@ const app =
       {
         const seekTime = e.target.value;
         audio.currentTime = audio.duration/100 * seekTime;
+      }
+
+      btnRandom.onclick = function()
+      {   
+        if(_this.isRandom)
+        {
+          _this.button_Random();
+          btnRandom.classList.add('active');
+          _this.isRandom = false;
+        }
+        else
+        {
+          _this.isRandom = true;
+          btnRandom.classList.remove('active');
+        }
+      }
+
+      playlist.onclick = function(e)
+      {
+        const songNode = e.target.closest('.song:not(.active)');
+        if( songNode || e.target.closest('option'))
+        {
+          if(songNode)
+          {
+            _this.currentIndex = Number(songNode.dataset.index);
+            _this.loadCurrentSong();
+            _this.render();
+            audio.play();
+          }
+        }
+      }
+
+      btnRepeat.onclick = function()
+      {
+        if(_this.isRepeat)
+        {
+          btnRepeat.classList.add('active')
+          _this.isRepeat = false;
+        }
+        else
+        {
+          btnRepeat.classList.remove('active')
+          _this.isRepeat = true;
+        }
       }
     },
 
@@ -210,6 +271,8 @@ const app =
         this.currentIndex = 0;
       }
       this.loadCurrentSong();
+      this.render();
+      this.scrollToActiveSong();
     },
 
     prevSong: function()
@@ -217,9 +280,39 @@ const app =
       this.currentIndex--;
       if(this.currentIndex < 0)
       {
-        this.currentIndex = this.songs.length;
+        this.currentIndex = this.songs.length-1;
       }
       this.loadCurrentSong();
+      this.render();
+      this.scrollToActiveSong();
+    },
+
+    button_Random: function()
+    { 
+      this.currentIndex = Math.round((this.songs.length-1)*Math.random())
+      // console.log(this.currentIndex)
+      this.loadCurrentSong()
+      audio.play();
+      this.render();
+      this.scrollToActiveSong();
+    },
+
+    button_Repeat: function()
+    {
+      // _this.loadCurrentSong();
+      audio.play();
+      this.render();
+      this.scrollToActiveSong();
+    },
+
+    scrollToActiveSong: function()
+    {
+      setTimeout( () =>{
+        $('.song.active').scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+        })
+      }, 300)
     },
 
     start : function()

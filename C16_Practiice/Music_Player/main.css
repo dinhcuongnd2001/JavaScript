@@ -118,6 +118,11 @@
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
   }
+
+  .progress:hover
+  {
+    cursor: pointer;
+  }
   
   .progress::-webkit-slider-thumb {
     -webkit-appearance: none;
