@@ -1,18 +1,18 @@
-for(var i = 1 ; i <= 10 ; i++){
-    console.log(i);
-}
+// for(var i = 1 ; i <= 10 ; i++){
+//     console.log(i);
+// }
 
-var myArray = [
-    'Js',
-    'CSS',
-    "HTML",
-    'PHP'
-];
+// var myArray = [
+//     'Js',
+//     'CSS',
+//     "HTML",
+//     'PHP'
+// ];
 
-var lengthArray = myArray.length;
-for(var i = 0 ; i < lengthArray ; i++){
-    console.log(myArray[i])
-}
+// var lengthArray = myArray.length;
+// for(var i = 0 ; i < lengthArray ; i++){
+//     console.log(myArray[i])
+// }
 
 // For with IN
 myString = 'hello'
