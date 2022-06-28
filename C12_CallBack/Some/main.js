@@ -31,8 +31,28 @@ var courses = [
     }
 ];
 
-var result = courses.some2(function(course){
-    return course.isFinish === true;
-});
+// var result = courses.some2(function(course){
+//     return course.isFinish === true;
+// });
 
-console.log(result);
+// console.log(result);
+
+Array.prototype.myMap = function(cb) {
+    var results = [];   
+    for(var i in this)
+    {   
+        
+        if(this.hasOwnProperty(i))
+        {
+
+            results.push(cb(this[i]));
+        }
+    }
+    return results;
+}
+
+var result = courses.myMap( course => {
+    return `${course.name}`;
+})
+
+console.log(result)
